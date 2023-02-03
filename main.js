@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // AXIOS GLOBALS
 axios.defaults.headers.common['loki-Auth'] = 'lokiToken'
 
@@ -14,10 +15,16 @@ function getTodos() {
   .get('https://jsonplaceholder.typicode.com/todos', { timeout: 5 })
   .then(res=>showOutput(res))
   .catch(err=>console.log(err))
+=======
+// GET REQUEST
+function getTodos() {
+  console.log('GET Request');
+>>>>>>> 9384eed06232bd79d9aab43f4fdf7458af6619cc
 }
 
 // POST REQUEST
 function addTodo() {
+<<<<<<< HEAD
   // axios({
   //   method: 'post',
   //   url: 'https://jsonplaceholder.typicode.com/todos',
@@ -32,10 +39,14 @@ function addTodo() {
   })
   .then(res => showOutput(res))
   .catch(err => console.error(err))
+=======
+  console.log('POST Request');
+>>>>>>> 9384eed06232bd79d9aab43f4fdf7458af6619cc
 }
 
 // PUT/PATCH REQUEST
 function updateTodo() {
+<<<<<<< HEAD
   // Put
   // axios.put('https://jsonplaceholder.typicode.com/todos/1', {
   //   title: 'Updated ToDo',
@@ -51,17 +62,25 @@ function updateTodo() {
   })
   .then(res => showOutput(res))
   .catch(err => console.error(err))
+=======
+  console.log('PUT/PATCH Request');
+>>>>>>> 9384eed06232bd79d9aab43f4fdf7458af6619cc
 }
 
 // DELETE REQUEST
 function removeTodo() {
+<<<<<<< HEAD
   axios.delete('https://jsonplaceholder.typicode.com/todos/1')
   .then(res => showOutput(res))
   .catch(err => console.error(err))
+=======
+  console.log('DELETE Request');
+>>>>>>> 9384eed06232bd79d9aab43f4fdf7458af6619cc
 }
 
 // SIMULTANEOUS DATA
 function getData() {
+<<<<<<< HEAD
   axios.all([
     axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5'),
     axios.get('https://jsonplaceholder.typicode.com/posts?_limit=5')
@@ -75,10 +94,14 @@ function getData() {
   //   showOutput(res[1])
   // })
   .catch(err => console.log(err))
+=======
+  console.log('Simultaneous Request');
+>>>>>>> 9384eed06232bd79d9aab43f4fdf7458af6619cc
 }
 
 // CUSTOM HEADERS
 function customHeaders() {
+<<<<<<< HEAD
   const config = {
     headers: {
       'Content-Type': 'application/JSON',
@@ -92,10 +115,14 @@ function customHeaders() {
   }, config)
   .then(res => showOutput(res))
   .catch(err => console.error(err))
+=======
+  console.log('Custom Headers');
+>>>>>>> 9384eed06232bd79d9aab43f4fdf7458af6619cc
 }
 
 // TRANSFORMING REQUESTS & RESPONSES
 function transformResponse() {
+<<<<<<< HEAD
   const options = {
     method: 'post', 
     url: 'https://jsonplaceholder.typicode.com/todos',
@@ -110,10 +137,14 @@ function transformResponse() {
   }
 
   axios(options).then(res => showOutput(res))
+=======
+  console.log('Transform Response');
+>>>>>>> 9384eed06232bd79d9aab43f4fdf7458af6619cc
 }
 
 // ERROR HANDLING
 function errorHandling() {
+<<<<<<< HEAD
   axios
   .get('https://jsonplaceholder.typicode.com/todoss', {
     validateStatus: function(status) {
@@ -139,10 +170,14 @@ function errorHandling() {
       }
     }
   })
+=======
+  console.log('Error Handling');
+>>>>>>> 9384eed06232bd79d9aab43f4fdf7458af6619cc
 }
 
 // CANCEL TOKEN
 function cancelToken() {
+<<<<<<< HEAD
   const source = axios.CancelToken.source()
 
   axios
@@ -179,6 +214,14 @@ const axiosInstance = axios.create({
 })
 
 // axiosInstance.get('/comments').then(res => showOutput(res))
+=======
+  console.log('Cancel Token');
+}
+
+// INTERCEPTING REQUESTS & RESPONSES
+
+// AXIOS INSTANCES
+>>>>>>> 9384eed06232bd79d9aab43f4fdf7458af6619cc
 
 // Show output in browser
 function showOutput(res) {
