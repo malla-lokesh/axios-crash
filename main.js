@@ -1,5 +1,5 @@
 // AXIOS GLOBALS
-axios.defaults.headers.common['loki-Auth'] = 'myToken'
+axios.defaults.headers.common['loki-Auth'] = 'lokiToken'
 
 // GET REQUEST
 function getTodos() {
